@@ -1,0 +1,110 @@
+body {
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+}
+header {
+    background-color: darkgrey;
+    margin-top: 0pc;
+    margin-bottom: 0px;
+} 
+
+h1 {
+    vertical-align: center;
+    display: inline-block;
+    padding: 15px;
+}
+
+.headShot {
+    float: left;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+}
+
+
+
+nav {
+    float: right;
+}
+
+.menu {
+    text-align: left;
+    background-color: gray;
+}
+
+.container {
+    height: auto;
+    background-color: lightgray;
+    width: 90%;
+    display: inline-block;
+}
+
+.subContainer {
+    background-color: whitesmoke;
+    margin: auto;
+    padding: 10%;
+}
+
+
+@media screen and (max-width: 633px) {
+    nav {
+        float: none;
+        background-color: white;
+    }
+
+    #menuMobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin: 0px;
+        padding: 10px;
+        font-size: 1.50em;
+    }
+
+
+    #headshot {
+        visibility: hidden;
+    }
+
+    #headShotMobile {
+        height: 100px;
+        width: 100px;
+        background-color: gray;
+        margin: 15px;
+    }
+    
+}
+
+
+@media screen and (min-width: 633px) {
+    header {
+        position: static;
+        float: left;
+        width:70%;
+    }
+
+    nav {
+        display: inline-block;
+        position: relative;
+        float: right;
+    }
+    #headShotMobile {
+        visibility: hidden;
+    }
+   #headShot {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: black;
+    }
+    
+
+}
